@@ -1,5 +1,7 @@
-import { Link } from "react-router-dom";
+
 import homeLogo from "../../assets/icone.png";
+import ListarProdutosHome from "../../components/produtos/listarprodutoshome/ListarProdutosHome";
+import ModalProduto from "../../components/produtos/modalprodutos/ModalProduto";
 
 function Home() {
   return (
@@ -13,10 +15,10 @@ function Home() {
               {/* <button className="rounded bg-white/20 text-white py-2 px-4 font-semibold border border-white hover:bg-red-950/50 hover:text-white">
                 Conheça nossos produtos
               </button> */}
-              <button className="rounded bg-white/20 text-white py-2 px-4 font-semibold border border-white hover:bg-red-950/50 hover:text-white">
-              <Link to="/categorias" className="hover:underline">
-                    Categorias
-                </Link>
+              <button  className='
+                                    bg-indigo-600
+                                    '>
+              <ModalProduto />
               </button>
             </div>
           </div>
@@ -26,6 +28,7 @@ function Home() {
           </div>
         </div>
       </div>
+      <ListarProdutosHome />
     </>
   );
 }
