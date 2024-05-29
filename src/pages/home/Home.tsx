@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import homeLogo from "../../assets/icone.png";
 
 function Home() {
@@ -13,7 +14,9 @@ function Home() {
                 Conheça nossos produtos
               </button> */}
               <button className="rounded bg-white/20 text-white py-2 px-4 font-semibold border border-white hover:bg-red-950/50 hover:text-white">
-                Encontre por categoria
+              <Link to="/categorias" className="hover:underline">
+                    Categorias
+                </Link>
               </button>
             </div>
           </div>

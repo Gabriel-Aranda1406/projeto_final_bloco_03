@@ -8,11 +8,11 @@ function Navbar() {
           Farmácia Cura Tudo
         </Link>
         <div className="flex gap-8">
-          {/* <Link to="/produtos" className="hover:underline">
-            Produtos
-          </Link> */}
           <Link to="/categorias" className="hover:underline">
             Categorias
+          </Link>
+          <Link to="/cadastroCategoria" className="hover:underline">
+            Cadastrar Categorias
           </Link>
         </div>
       </div>
